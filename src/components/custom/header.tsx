@@ -35,6 +35,11 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-x-4">
                     <ul className="flex items-center font-medium space-x-4">
+                    <li>
+                            <Link className="hover:text-primary" href={'/review'}>
+                                Review
+                            </Link>
+                        </li>
                         <li>
                             <Link className="hover:text-primary" href={'/'}>
                                 Menu
@@ -58,7 +63,9 @@ const Header = () => {
                         <Phone />
                         <span>+91 9800 098 998</span>
                     </div>
-                    <Button size={'sm'}>Logout</Button>
+                    <Link href="/login">
+                    <Button size={'sm'}>Log In</Button>
+                    </Link>
                 </div>
             </nav>
         </header>
